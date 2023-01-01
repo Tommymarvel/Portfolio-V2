@@ -234,31 +234,31 @@ $(function() {
   });
 
   
-  $("#form").submit(function() {
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize()
-    }).done(function() {
+  // $("#form").submit(function() {
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "mail.php",
+  //     data: $(this).serialize()
+  //   }).done(function() {
 
-      var tl = anime.timeline({
-        easing: 'easeOutExpo',
-      });
+  //     var tl = anime.timeline({
+  //       easing: 'easeOutExpo',
+  //     });
 
-      tl
-        .add({
-          targets: '.art-submit',
-          opacity: 0,
-          scale: .5,
-        })
-        .add({
-          targets: '.art-success',
-          scale: 1,
-          height: '45px',
-        })
-    });
-    return false;
-  });
+  //     tl
+  //       .add({
+  //         targets: '.art-submit',
+  //         opacity: 0,
+  //         scale: .5,
+  //       })
+  //       .add({
+  //         targets: '.art-success',
+  //         scale: 1,
+  //         height: '45px',
+  //       })
+  //   });
+  //   return false;
+  // });
 
   // portfolio filter
   $('.art-filter a').on('click', function() {
@@ -463,31 +463,71 @@ $(function() {
       continuousScrolling: true,
     });
 
-    $("#form").submit(function() {
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize()
-      }).done(function() {
+    // $("#form").submit(function() {
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "mail.php",
+    //     data: $(this).serialize()
+    //   }).done(function() {
 
-        var tl = anime.timeline({
-          easing: 'easeOutExpo',
-        });
+    //     var tl = anime.timeline({
+    //       easing: 'easeOutExpo',
+    //     });
 
-        tl
-          .add({
-            targets: '.art-submit',
-            opacity: 0,
-            scale: .5,
-          })
-          .add({
-            targets: '.art-success',
-            scale: 1,
-            height: '45px',
-          })
+    //     tl
+    //       .add({
+    //         targets: '.art-submit',
+    //         opacity: 0,
+    //         scale: .5,
+    //       })
+    //       .add({
+    //         targets: '.art-success',
+    //         scale: 1,
+    //         height: '45px',
+    //       })
+    //   });
+    //   return false;
+    // });
+
+$("#form").on("submit", (event) => {
+  event.preventDefault();
+
+  const name = $("#name").val();
+  const email = $("#email").val();
+  const message = $("#message").val();
+
+  $.ajax({
+    type: "GET",
+    url: "/form-handler.php",
+    data: { name, email, message },
+    success: function (response) {
+      // apply the styles when the form submission is successful
+      var tl = anime.timeline({
+        easing: "easeOutExpo",
       });
-      return false;
-    });
+
+      tl.add({
+        targets: ".art-submit",
+        opacity: 0,
+        scale: 0.5,
+      }).add({
+        targets: ".art-success",
+        scale: 1,
+        height: "45px",
+      });
+    },
+    error: function (error) {
+      // show an error message when there is a problem with the form submission or the AJAX request
+      $(".art-error").text(
+        "There was a problem with the request. Please try again."
+      );
+    },
+  });
+});
+
+
+
+
 
     // Masonry Grid
     $('.art-grid').isotope({
@@ -669,3 +709,4 @@ $(function() {
   })
 
 });
+
