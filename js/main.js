@@ -234,31 +234,41 @@ $(function() {
   });
 
   
-  // $("#form").submit(function() {
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "mail.php",
-  //     data: $(this).serialize()
-  //   }).done(function() {
+$("#form").on("submit", (event) => {
+  event.preventDefault();
 
-  //     var tl = anime.timeline({
-  //       easing: 'easeOutExpo',
-  //     });
+  const name = $("#name").val();
+  const email = $("#email").val();
+  const message = $("#message").val();
 
-  //     tl
-  //       .add({
-  //         targets: '.art-submit',
-  //         opacity: 0,
-  //         scale: .5,
-  //       })
-  //       .add({
-  //         targets: '.art-success',
-  //         scale: 1,
-  //         height: '45px',
-  //       })
-  //   });
-  //   return false;
-  // });
+  $.ajax({
+    type: "GET",
+    url: "/form-handler.php",
+    data: { name, email, message },
+    success: function (response) {
+      // apply the styles when the form submission is successful
+      var tl = anime.timeline({
+        easing: "easeOutExpo",
+      });
+
+      tl.add({
+        targets: ".art-submit",
+        opacity: 0,
+        scale: 0.5,
+      }).add({
+        targets: ".art-success",
+        scale: 1,
+        height: "45px",
+      });
+    },
+    error: function (error) {
+      // show an error message when there is a problem with the form submission or the AJAX request
+      $(".art-error").text(
+        "There was a problem with the request. Please try again."
+      );
+    },
+  });
+});
 
   // portfolio filter
   $('.art-filter a').on('click', function() {
@@ -463,31 +473,6 @@ $(function() {
       continuousScrolling: true,
     });
 
-    // $("#form").submit(function() {
-    //   $.ajax({
-    //     type: "POST",
-    //     url: "mail.php",
-    //     data: $(this).serialize()
-    //   }).done(function() {
-
-    //     var tl = anime.timeline({
-    //       easing: 'easeOutExpo',
-    //     });
-
-    //     tl
-    //       .add({
-    //         targets: '.art-submit',
-    //         opacity: 0,
-    //         scale: .5,
-    //       })
-    //       .add({
-    //         targets: '.art-success',
-    //         scale: 1,
-    //         height: '45px',
-    //       })
-    //   });
-    //   return false;
-    // });
 
 $("#form").on("submit", (event) => {
   event.preventDefault();
@@ -524,9 +509,6 @@ $("#form").on("submit", (event) => {
     },
   });
 });
-
-
-
 
 
     // Masonry Grid
