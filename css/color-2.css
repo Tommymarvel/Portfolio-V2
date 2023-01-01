@@ -1,0 +1,111 @@
+
+.art-link.art-color-link {
+  color: #f44336
+}
+
+.art-link.art-color-link:hover {
+  color: #f44336;
+}
+.art-btn {
+  background: #f44336;
+}
+
+blockquote {
+  background: #f44336;
+}
+
+.art-custom-list li:before {
+  border: solid 2px #f44336;
+}
+
+.art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp {
+  background: #f44336;
+}
+
+.art-info-bar .art-name:hover a {
+  color: #f44336
+}
+
+.art-info-bar .art-knowledge-list li:before {
+  color: #f44336;
+}
+
+.art-menu-bar .art-language-change li.art-active-lang {
+  background-color: #f44336;
+}
+
+.art-code i {
+  color: #f44336
+}
+
+.art-counter-frame .art-counter-box .art-counter {
+  color: #f44336;
+}
+
+.art-counter-frame .art-counter-box .art-counter-plus {
+  color: #f44336;
+}
+
+.art-price.art-popular-price:before {
+  background: #f44336
+}
+
+.art-price .art-price-body .art-price-cost .art-number {
+  color: #f44336;
+}
+
+.art-price .art-price-body .art-price-list li:before {
+  color: #f44336
+}
+
+.art-price .art-price-body .art-price-list li.art-empty-item:before {
+  color: #f44336
+}
+
+.art-testimonial .art-testimonial-footer .art-star-rate {
+  color: #f44336
+}
+
+.art-slider-navigation .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #f44336;
+}
+
+.fancybox-progress {
+  background: #f44336;
+}
+
+.fancybox-thumbs__list a:before {
+  border-color: #f44336;
+}
+
+.art-timeline .art-timeline-item .art-timeline-mark {
+  border: solid 3px #f44336;
+}
+
+.art-form-field textarea.art-active {
+  border-color: #f44336;
+}
+
+.art-form-field textarea:focus {
+  border-color: #f44336
+}
+
+.art-contact-form .art-input.art-active+label, .art-contact-form .art-input:focus+label {
+  background: #f44336;
+}
+
+.art-pagination .art-pagination-center a.art-active-pag {
+  color: #f44336
+}
+
+.art-preloader-load path:last-child {
+  stroke: #f44336;
+}
+
+.art-line-progress path:last-child {
+  stroke: #f44336;
+}
+
+.art-cirkle-progress path:last-child {
+  stroke: #f44336;
+}
