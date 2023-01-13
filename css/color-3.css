@@ -1,0 +1,111 @@
+
+.art-link.art-color-link {
+  color: #4CAF50
+}
+
+.art-link.art-color-link:hover {
+  color: #4CAF50;
+}
+.art-btn {
+  background: #4CAF50;
+}
+
+blockquote {
+  background: #4CAF50;
+}
+
+.art-custom-list li:before {
+  border: solid 2px #4CAF50;
+}
+
+.art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp {
+  background: #4CAF50;
+}
+
+.art-info-bar .art-name:hover a {
+  color: #4CAF50
+}
+
+.art-info-bar .art-knowledge-list li:before {
+  color: #4CAF50;
+}
+
+.art-menu-bar .art-language-change li.art-active-lang {
+  background-color: #4CAF50;
+}
+
+.art-code i {
+  color: #4CAF50
+}
+
+.art-counter-frame .art-counter-box .art-counter {
+  color: #4CAF50;
+}
+
+.art-counter-frame .art-counter-box .art-counter-plus {
+  color: #4CAF50;
+}
+
+.art-price.art-popular-price:before {
+  background: #4CAF50
+}
+
+.art-price .art-price-body .art-price-cost .art-number {
+  color: #4CAF50;
+}
+
+.art-price .art-price-body .art-price-list li:before {
+  color: #4CAF50
+}
+
+.art-price .art-price-body .art-price-list li.art-empty-item:before {
+  color: #4CAF50
+}
+
+.art-testimonial .art-testimonial-footer .art-star-rate {
+  color: #4CAF50
+}
+
+.art-slider-navigation .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #4CAF50;
+}
+
+.fancybox-progress {
+  background: #4CAF50;
+}
+
+.fancybox-thumbs__list a:before {
+  border-color: #4CAF50;
+}
+
+.art-timeline .art-timeline-item .art-timeline-mark {
+  border: solid 3px #4CAF50;
+}
+
+.art-form-field textarea.art-active {
+  border-color: #4CAF50;
+}
+
+.art-form-field textarea:focus {
+  border-color: #4CAF50;
+}
+
+.art-contact-form .art-input.art-active+label, .art-contact-form .art-input:focus+label {
+  background: #4CAF50;
+}
+
+.art-pagination .art-pagination-center a.art-active-pag {
+  color: #4CAF50;
+}
+
+.art-preloader-load path:last-child {
+  stroke: #4CAF50;
+}
+
+.art-line-progress path:last-child {
+  stroke: #4CAF50;
+}
+
+.art-cirkle-progress path:last-child {
+  stroke: #4CAF50;
+}
