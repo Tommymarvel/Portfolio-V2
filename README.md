@@ -104,7 +104,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](marvellousibironke.netlify.app)
+- [Live Demo](https://marvellousibironke.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,7 +250,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Nazar Miller for this awesome template
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
