@@ -1,11 +1,12 @@
 
 .art-link.art-color-link {
-  color: #f44336
+  color: #f44336;
 }
 
 .art-link.art-color-link:hover {
   color: #f44336;
 }
+
 .art-btn {
   background: #f44336;
 }
@@ -14,7 +15,7 @@ blockquote {
   background: #f44336;
 }
 
-.art-custom-list li:before {
+.art-custom-list li::before {
   border: solid 2px #f44336;
 }
 
@@ -23,10 +24,10 @@ blockquote {
 }
 
 .art-info-bar .art-name:hover a {
-  color: #f44336
+  color: #f44336;
 }
 
-.art-info-bar .art-knowledge-list li:before {
+.art-info-bar .art-knowledge-list li::before {
   color: #f44336;
 }
 
@@ -35,7 +36,7 @@ blockquote {
 }
 
 .art-code i {
-  color: #f44336
+  color: #f44336;
 }
 
 .art-counter-frame .art-counter-box .art-counter {
@@ -46,24 +47,24 @@ blockquote {
   color: #f44336;
 }
 
-.art-price.art-popular-price:before {
-  background: #f44336
+.art-price.art-popular-price::before {
+  background: #f44336;
 }
 
 .art-price .art-price-body .art-price-cost .art-number {
   color: #f44336;
 }
 
-.art-price .art-price-body .art-price-list li:before {
-  color: #f44336
+.art-price .art-price-body .art-price-list li::before {
+  color: #f44336;
 }
 
-.art-price .art-price-body .art-price-list li.art-empty-item:before {
-  color: #f44336
+.art-price .art-price-body .art-price-list li.art-empty-item::before {
+  color: #f44336;
 }
 
 .art-testimonial .art-testimonial-footer .art-star-rate {
-  color: #f44336
+  color: #f44336;
 }
 
 .art-slider-navigation .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -74,7 +75,7 @@ blockquote {
   background: #f44336;
 }
 
-.fancybox-thumbs__list a:before {
+.fancybox-thumbs__list a::before {
   border-color: #f44336;
 }
 
@@ -87,15 +88,16 @@ blockquote {
 }
 
 .art-form-field textarea:focus {
-  border-color: #f44336
+  border-color: #f44336;
 }
 
-.art-contact-form .art-input.art-active+label, .art-contact-form .art-input:focus+label {
+.art-contact-form .art-input.art-active + label,
+.art-contact-form .art-input:focus + label {
   background: #f44336;
 }
 
 .art-pagination .art-pagination-center a.art-active-pag {
-  color: #f44336
+  color: #f44336;
 }
 
 .art-preloader-load path:last-child {
