@@ -692,3 +692,14 @@ $("#form").on("submit", (event) => {
 
 });
 
+// $(document).ready(function () {
+//   $('a[href="#explorework"]').click(function () {
+//     $("html, body").animate(
+//       {
+//         scrollTop: $("#explorework").offset().top,
+//       },
+//       500
+//     );
+//     return false;
+//   });
+// });
