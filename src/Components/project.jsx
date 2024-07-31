@@ -1,33 +1,46 @@
 import Technological from '../assets/images/thumbnail/TP_thumbnail_1000x564.jpg'
-import DMCE from '../assets/images/thumbnail/DMCE_thumbnail_1000x564.jpg';
+// import DMCE from '../assets/images/thumbnail/DMCE_thumbnail_1000x564.jpg';
 import Innicross from '../assets/images/thumbnail/Innicross_thumbnail_1000x564.jpg';
-import NaijaFarmer from '../assets/images/thumbnail/naijaFarmer.jpg';
+import Fudfarmer from '../assets/images/thumbnail/Screenshot 2024-07-28 145322.png'
 // import Raft from '../assets/images/thumbnail/raft_thumbnail.jpg';
 import Diva from '../assets/images/thumbnail/diva.png';
-import TicTackToe from '../assets/images/thumbnail/tictaktoe_thumbnail_1000x565.jpg';
-import Shortlet from '../assets//images/thumbnail/shortlet.png';
-import Card1 from '../assets/images/card1.svg'
-import Card2 from '../assets/images/card2.svg';
+import SyncAll from '../assets/images/thumbnail/Screenshot 2024-07-28 152426.png';
+import Wealthyloop from '../assets/images/thumbnail/Screenshot 2024-07-28 145449.png'
+// import Card2 from '../assets/images/card2.svg';
 /** @jsxImportSource @emotion/react */
+import './css/project.css'
 
 
 
 
 const Project = () => {
   const projects = [
+    
     {
+      name: 'SyncAll',
+      tech: 'Reactjs, Tailwind, TypeScript, Nodejs',
+      info: 'SyncAll is at the forefront of music licensing technology, offering advanced features that simplify and streamline the process of finding and licensing African music. The platform continuously evolves to incorporate new tools and approaches, ensuring users have access to state-of-the-art functionality.',
+      link: 'https://sync-all-fe-1brn.vercel.app/',
+      image: SyncAll,
+    },
+    {
+      name: 'Fudfarmer',
+      tech: 'Laravel, Php, Tailwind',
+      info: "Fudfarmer's mission is to bridge the gap between farmers and consumers, which will help lower food costs.",
+      link: 'https://fudfarmer.com/',
+      image: Fudfarmer,
+    },{
+      name: 'Wealthyloop',
+      tech: 'Laravel, Php, Tailwind',
+      info: 'Wealthyloop is a pioneering investment platform operating under the umbrella of Padikash, a global financial entity extending fintech solutions worldwide.',
+      link: 'https://www.wealthyloop.com/',
+      image: Wealthyloop,
+    },{
       name: 'Technological Partner',
       tech: 'Reactjs, Tailwind, Emailjs',
       info: "On a mission to provide unparalleled legal support to businesses at the forefront of Africa's economic transformation.",
       link: 'https://technolawgicalpartner.com/',
       image: Technological,
-    },
-    {
-      name: 'DMCE',
-      tech: 'Reactjs, Tailwind, Emailjs',
-      info: 'This large African organisation helps manage and grow music and entertainment industries throughout Africa.',
-      link: 'https://digitalmusicce.com/',
-      image: DMCE,
     },
     {
       name: 'Innicross',
@@ -37,88 +50,51 @@ const Project = () => {
       image: Innicross,
     },
     {
-      name: 'NaijaFarmer',
-      tech: 'Reactjs, Tailwind, Emailjs',
-      info: 'Naijafarmer is a web farm full of resources and experience to guide people in Nigerian agriculture.',
-      link: 'https://naijafarmer.com/',
-      image: NaijaFarmer,
-    },
-    {
       name: 'DivasByClaudia',
       tech: 'Wordpress, WooCommerce, Bookly, Elementor',
       info: 'DivasByClaudia is an award-winning hair salon that specializes in weaving and custom wig designs.',
       link: 'https://diva.padikash.com/',
       image: Diva,
     },
-    {
-      name: 'TicTacToe',
-      tech: 'HTML, CSS, Javascript',
-      info: "Enjoy playing Tic Tac Toe? Check out my digital version! It's easy to use, enjoyable, and suitable for all abilities. Play right now!",
-      link: 'https://tikitakatoe.netlify.app/',
-      image: TicTackToe,
-    },
-    {
-      name: 'Shortlet',
-      tech: 'Wordpress, Elementor',
-      info: 'This platform offers short-term stays with user-friendly interface, 24/7 help and secure payment processing.',
-      link: 'https://shortlet.padikash.com/',
-      image: Shortlet,
-    },
+    
   ];
   return (
-    <div className="mt-[50px] ml-10 ">
-      <h2 className="text-3xl font-[500] "> Project</h2>
-      <div className="grid lg:grid-cols-3 gap-4">
+    <div className="mt-[50px] ">
+      <h2 className="text-4xl font-[500] text-center mb-[30px]"> Project</h2>
+      <div className="flex gap-8 mt-10 w-full items-center flex-wrap justify-center mx-auto">
         {projects.map((project, idx) => (
-          <div key={idx} className="mt-8 neumorphism relative group">
-            <img
-              src={project.image}
-              alt="project"
-              className="h-[300px] w-[500px] object-cover rounded-lg"
-            />
-            <div className=" absolute inset-0 bg-yellow-500 bg-opacity-100 opacity-0 hover:opacity-100 transition-opacity duration-200 flex items-center justify-center text-white flex-col p-5">
-              <h3 className="text-3xl font-[500]">{project.name}</h3>
-              <p className="text-xl mt-4 text-center">{project.info}</p>
-              <p className="text-xl mt-4">{project.tech}</p>
+          <div
+            className="card w-[500px] h-[500px]  lg:min-w-[500px] lg:min-h-[500px]  "
+            key={idx}
+          >
+            <div className="content">
+              <div className="back">
+                <div className="back-content">
+                  <img src={project.image}></img>
+                </div>
+              </div>
+              <div className="front items-center flex flex-col">
+                <div className="front-content gap-4">
+                  <h3 className="text-3xl font-[500] text-center">
+                    {project.name}
+                  </h3>
+                  <p className="text-xl text-center">{project.info}</p>
+                  <p className="text-xl text-center">{project.tech}</p>
 
-              <a
-                href={project.link}
-                className="text-xl mt-4 bg-white text-yellow-500 p-5 border-md"
-              >
-                <button>Check it out</button>
-              </a>
+                  <a
+                    href={project.link}
+                    className="text-xl mx-auto text-yellow-500 p-5 border-md w-fit"
+                  >
+                    <button className='button'>
+                      <span>Check it</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
-
-      {projects.map((project, idx) => (
-        <div className="card lg:w-[300px] " key={idx}>
-          <div className="content">
-            <div className="back">
-              <div className="back-content">
-                <img src={project.image}></img>
-              </div>
-            </div>
-            <div className="front">
-              <div className="img">
-                <h3 className="text-3xl font-[500]">{project.name}</h3>
-                <p className="text-xl mt-4 text-center">{project.info}</p>
-                <p className="text-xl mt-4">{project.tech}</p>
-
-                <a
-                  href={project.link}
-                  className="text-xl mt-4 bg-white text-yellow-500 p-5 border-md"
-                >
-                  <button>Check it out</button>
-                </a>
-              </div>
-
-              
-            </div>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }

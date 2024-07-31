@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import Hero from '../Components/hero';
 import Project from '../Components/project';
+import Profile from '../Components/Profile';
+import Contactus from '../Components/contactus';
 
 const Homepage = () => {
   const circlesRef = useRef([]);
@@ -69,9 +71,11 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mx-2.5 lg:ml-[80px]">
       <Hero />
       <Project />
+      <Profile />
+      <Contactus />
       {/* Other components */}
       {Array(20)
         .fill()

@@ -1,0 +1,22 @@
+.profile, .profile-para2, .profile-para3, .profile-para4 {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  display: inline;
+  margin-top: 10px;
+  background-image: linear-gradient(
+        transparent 50%,
+        #e1fffe 50%,
+        rgb(234 179 8) 85%,
+        transparent 85%,
+        transparent 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;
+    }
+}
