@@ -17,10 +17,10 @@ const Profile = () => {
           <div className="mt-2.5">
             <p className="profile">
               Hey there! I&apos;m <strong>Marvellous Ibironke</strong> , a
-              front-end engineer from Lagos, Nigeria, with over four years of
+              front-end engineer from Lagos, Nigeria, with over 3 years of
               experience creating sleek, functional websites and applications. I
-              specialize in JavaScript, React, Redux, jQuery, HTML5, and CSS3,
-              and I also dabble in back-end technologies like Ruby on Rails and
+              specialize in JavaScript, React, Redux, jQuery, HTML5, CSS3, Wordpress,
+              and I also dabble in back-end technologies like Nodejs and
               Laravel.
             </p>
           </div>
